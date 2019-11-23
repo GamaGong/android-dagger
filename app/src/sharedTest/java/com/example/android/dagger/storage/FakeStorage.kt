@@ -16,6 +16,8 @@
 
 package com.example.android.dagger.storage
 
+import com.doclad.user.Storage
+
 class FakeStorage : Storage {
 
     private val map = mutableMapOf<String, String>()

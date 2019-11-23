@@ -17,8 +17,8 @@
 package com.example.android.dagger
 
 import android.app.Application
-import com.example.android.dagger.storage.SharedPreferencesStorage
-import com.example.android.dagger.user.UserManager
+import com.doclad.storage.SharedPreferencesStorage
+import com.doclad.user.UserManager
 
 open class MyApplication : Application() {
 

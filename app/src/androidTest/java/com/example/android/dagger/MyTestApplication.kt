@@ -17,7 +17,7 @@
 package com.example.android.dagger
 
 import com.example.android.dagger.storage.FakeStorage
-import com.example.android.dagger.user.UserManager
+import com.doclad.user.UserManager
 
 class MyTestApplication : MyApplication() {
 

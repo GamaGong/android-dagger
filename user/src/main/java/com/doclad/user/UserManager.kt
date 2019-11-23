@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-package com.example.android.dagger.user
+package com.doclad.user
 
-import com.example.android.dagger.storage.Storage
 
 private const val REGISTERED_USER = "registered_user"
 private const val PASSWORD_SUFFIX = "password"

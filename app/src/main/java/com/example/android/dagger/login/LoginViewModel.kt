@@ -18,7 +18,7 @@ package com.example.android.dagger.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.android.dagger.user.UserManager
+import com.doclad.user.UserManager
 
 /**
  * LoginViewModel is the ViewModel that [LoginActivity] uses to

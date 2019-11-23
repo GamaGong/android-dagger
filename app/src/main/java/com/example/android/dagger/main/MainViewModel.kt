@@ -16,7 +16,7 @@
 
 package com.example.android.dagger.main
 
-import com.example.android.dagger.user.UserDataRepository
+import com.doclad.user.UserDataRepository
 
 /**
  * MainViewModel is the ViewModel that [MainActivity] uses to

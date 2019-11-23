@@ -16,8 +16,8 @@
 
 package com.example.android.dagger.settings
 
-import com.example.android.dagger.user.UserDataRepository
-import com.example.android.dagger.user.UserManager
+import com.doclad.user.UserDataRepository
+import com.doclad.user.UserManager
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock

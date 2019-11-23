@@ -16,7 +16,7 @@
 
 package com.example.android.dagger.main
 
-import com.example.android.dagger.user.UserDataRepository
+import com.doclad.user.UserDataRepository
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test

@@ -16,7 +16,7 @@
 
 package com.example.android.dagger.registration
 
-import com.example.android.dagger.user.UserManager
+import com.doclad.user.UserManager
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock

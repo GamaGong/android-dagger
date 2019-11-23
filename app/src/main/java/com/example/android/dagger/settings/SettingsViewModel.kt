@@ -16,8 +16,8 @@
 
 package com.example.android.dagger.settings
 
-import com.example.android.dagger.user.UserDataRepository
-import com.example.android.dagger.user.UserManager
+import com.doclad.user.UserDataRepository
+import com.doclad.user.UserManager
 
 /**
  * SettingsViewModel is the ViewModel that [SettingsActivity] uses to handle complex logic.

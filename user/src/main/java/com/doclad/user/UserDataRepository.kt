@@ -14,22 +14,29 @@
  * limitations under the License.
  */
 
-package com.example.android.dagger.storage
+package com.doclad.user
 
-import android.content.Context
+import kotlin.random.Random
 
-class SharedPreferencesStorage(context: Context) : Storage {
+/**
+ * UserDataRepository contains user-specific data such as username and unread notifications.
+ */
+class UserDataRepository(private val userManager: UserManager) {
 
-    private val sharedPreferences = context.getSharedPreferences("Dagger", Context.MODE_PRIVATE)
+    val username: String
+        get() = userManager.username
 
-    override fun setString(key: String, value: String) {
-        with(sharedPreferences.edit()) {
-            putString(key, value)
-            apply()
-        }
+    var unreadNotifications: Int
+
+    init {
+        unreadNotifications = randomInt()
     }
 
-    override fun getString(key: String): String {
-        return sharedPreferences.getString(key, "")!!
+    fun refreshUnreadNotifications() {
+        unreadNotifications = randomInt()
     }
+}
+
+fun randomInt(): Int {
+    return Random.nextInt(until = 100)
 }

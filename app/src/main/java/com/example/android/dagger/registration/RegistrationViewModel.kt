@@ -16,7 +16,7 @@
 
 package com.example.android.dagger.registration
 
-import com.example.android.dagger.user.UserManager
+import com.doclad.user.UserManager
 
 /**
  * RegistrationViewModel is the ViewModel that the Registration flow ([RegistrationActivity]

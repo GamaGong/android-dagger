@@ -16,7 +16,8 @@
 
 package com.example.android.dagger.storage
 
-import com.example.android.dagger.user.UserManager
+import com.doclad.user.Storage
+import com.doclad.user.UserManager
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
