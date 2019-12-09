@@ -16,12 +16,15 @@
 
 package com.doclad.user
 
+import javax.inject.Inject
+import javax.inject.Singleton
 import kotlin.random.Random
 
 /**
  * UserDataRepository contains user-specific data such as username and unread notifications.
  */
-class UserDataRepository(private val userManager: UserManager) {
+@Singleton
+class UserDataRepository @Inject constructor(private val userManager: UserManager) {
 
     val username: String
         get() = userManager.username

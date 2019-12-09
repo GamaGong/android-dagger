@@ -19,10 +19,9 @@ package com.example.android.dagger
 import android.app.Application
 import com.doclad.storage.SharedPreferencesStorage
 import com.doclad.user.UserManager
+import com.example.android.dagger.di.AppComponent
+import com.example.android.dagger.di.DaggerAppComponent
 
 open class MyApplication : Application() {
-
-    open val userManager by lazy {
-        UserManager(SharedPreferencesStorage(this))
-    }
+    val appComponent: AppComponent by lazy { AppComponent.init(applicationContext) }
 }
